@@ -1,0 +1,8 @@
+[package]
+name = "multiple-pac"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hal = "=1.0.0" # depends on pac 0.1
+pac = "0.2.0"

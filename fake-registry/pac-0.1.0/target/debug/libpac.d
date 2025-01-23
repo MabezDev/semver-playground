@@ -1,1 +1,0 @@
-/home/mabez/development/rust/cargo-semver-tests/libs/pac/target/package/pac-0.1.0/target/debug/libpac.rlib: /home/mabez/development/rust/cargo-semver-tests/libs/pac/target/package/pac-0.1.0/src/lib.rs
