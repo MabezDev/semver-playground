@@ -1,0 +1,1 @@
+/home/mabez/development/rust/cargo-semver-tests/libs/hal/target/package/hal-1.1.0/target/debug/libhal.rlib: /home/mabez/development/rust/cargo-semver-tests/libs/hal/target/package/hal-1.1.0/src/lib.rs
