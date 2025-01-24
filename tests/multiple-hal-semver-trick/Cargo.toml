@@ -1,0 +1,8 @@
+[package]
+name = "multiple-hal-sermver-trick"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hal = "2.0.0"
+hal-lib = "0.1.0" # depends on hal@1.0.0

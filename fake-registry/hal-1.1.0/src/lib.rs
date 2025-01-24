@@ -4,8 +4,11 @@
 #[used]
 static mut PERIPHERALS_TAKEN: bool = false;
 
+#[derive(Debug, Default, PartialEq, Eq)]
+pub struct Peripherals;
+
 /// Takes the peripherals (equivalent to calling esp_hal::init)
-pub fn take() -> bool {
+pub fn take() -> Peripherals {
     unsafe {
         // use a the global from the pac
         pac::__EXTERNAL_INTERRUTPTS[0] = 0xAA;
@@ -16,7 +19,7 @@ pub fn take() -> bool {
         PERIPHERALS_TAKEN = true;
 
         assert_eq!(pac::__EXTERNAL_INTERRUTPTS[0], 0xAA);
-
-        PERIPHERALS_TAKEN
     }
+
+    Peripherals
 }

@@ -1,8 +1,7 @@
 
 
 fn main() {
-    let peripherals = hal::take();
+    let peripherals = hal::take(); // 2.0.0 peripherals
     hal_lib::lib_thing(peripherals);
-    hal_lib::bad_lib_thing();
     println!("Hello, world!");
 }
